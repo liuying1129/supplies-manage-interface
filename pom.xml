@@ -1,0 +1,51 @@
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+  http://maven.apache.org/POM/4.0.0 
+  http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+	<modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yklis</groupId>
+    <artifactId>supplies-manage-interface</artifactId>
+    <version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<!-- 定义变量 -->
+	<properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<spring.version>4.1.7.RELEASE</spring.version>
+    	<spring.groupId>org.springframework</spring.groupId>
+	</properties>
+
+	<dependencies>
+	    <!-- scoper取值范围：
+	    compile，缺省值，适用于所有阶段，会随着项目一起发布。 
+	    provided，期望JDK、容器或使用者会提供这个依赖。如servlet.jar。 不会被打包
+	    runtime，只在运行时使用，如JDBC驱动，适用运行和测试阶段。 
+	    test，只在测试时使用，用于编译和运行测试代码。不会随项目发布。 
+	    system，类似provided，需要显式提供包含依赖的jar，Maven不会在Repository中查找它 -->
+		<dependency>
+	    	<groupId>junit</groupId>
+	    	<artifactId>junit</artifactId>
+	    	<version>4.12</version>
+	    	<!-- <scope>test</scope> -->
+	    </dependency>
+	   						   				
+	</dependencies>	
+
+	<build>
+	    <plugins>
+	        <!-- 解决maven编译时“source-1.5 中不支持 diamond 运算符”的问题 -->
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-compiler-plugin</artifactId>  
+                <version>3.5.1</version>  
+                <configuration>  
+	               <source>1.7</source>  
+	               <target>1.7</target>  
+                </configuration>  
+	        </plugin>	        
+	    </plugins>	      
+	</build>	 
+</project>
