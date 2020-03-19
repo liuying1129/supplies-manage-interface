@@ -9,4 +9,8 @@ public interface SuppliesManageService {
     String deleteReceipt(String unid);
     String insertReceipt(ReceiptEntity receiptEntity);
     String updateReceipt(ReceiptEntity receiptEntity);
+    String loadSJ_JBXX();
+    String loadSJ_Pack(String sjunid);
+    String queryReceiptList();
+    String audit(String unid);
 }
