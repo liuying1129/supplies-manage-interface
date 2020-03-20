@@ -11,6 +11,7 @@ public interface SuppliesManageService {
     String updateReceipt(ReceiptEntity receiptEntity);
     String loadSJ_JBXX();
     String loadSJ_Pack(String sjunid);
-    String queryReceiptList();
+    String queryReceiptList(String rkrqRadioValue);
     String audit(String unid);
+    String queryInventoryList();
 }
