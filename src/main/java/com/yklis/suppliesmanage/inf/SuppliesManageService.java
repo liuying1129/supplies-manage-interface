@@ -14,4 +14,6 @@ public interface SuppliesManageService {
     String queryReceiptList(String rkrqRadioValue);
     String audit(String unid);
     String queryInventoryList();
+    String outputInventory(String unid,String rlr,int sl,String dw,String ckrq,String memo);
+    String queryOutputList();
 }
