@@ -27,6 +27,7 @@ public class ReceiptEntity implements Serializable {
 	private int sl;
 	private String dw;
 	private LocalDate rkrq;
+	private String memo;
 	
     public int getUnid() {
         return unid;
@@ -90,4 +91,11 @@ public class ReceiptEntity implements Serializable {
     public void setRkrq(LocalDate rkrq) {
        this.rkrq = rkrq;
     }
+    
+    public String getMemo() {
+        return memo;
+    }
+    public void setMemo(String memo) {
+       this.memo = memo;
+    }		
 }
