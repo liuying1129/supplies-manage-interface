@@ -16,4 +16,5 @@ public interface SuppliesManageService {
     String queryInventoryList();
     String outputInventory(String unid,String rlr,int sl,String dw,String ckrq,String memo);
     String queryOutputList();
+    String querySqsydw();
 }
