@@ -17,4 +17,5 @@ public interface SuppliesManageService {
     String outputInventory(String unid,String rlr,int sl,String dw,String ckrq,String memo);
     String queryOutputList();
     String querySqsydw();
+    boolean login(String account,String password);
 }
