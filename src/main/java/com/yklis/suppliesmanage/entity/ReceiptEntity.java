@@ -26,6 +26,7 @@ public class ReceiptEntity implements Serializable {
 	private LocalDate yxq;
 	private int sl;
 	private String dw;
+	private String shr;
 	private LocalDate rkrq;
 	private String memo;
 	
@@ -85,6 +86,13 @@ public class ReceiptEntity implements Serializable {
        this.dw = dw;
     }		
 
+    public String getShr() {
+        return shr;
+    }
+    public void setShr(String shr) {
+       this.shr = shr;
+    }
+    
     public LocalDate getRkrq() {
         return rkrq;
     }
