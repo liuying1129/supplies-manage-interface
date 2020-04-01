@@ -19,4 +19,5 @@ public interface SuppliesManageService {
     String querySqsydw();
     boolean login(String account,String password);
     String queryUsernameFromUserid(String account);
+    String inventorySplit(String unid);
 }
