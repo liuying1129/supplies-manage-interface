@@ -20,4 +20,5 @@ public interface SuppliesManageService {
     boolean login(String account,String password);
     String queryUsernameFromUserid(String account);
     String inventorySplit(String unid);
+    boolean modifyPwd(String account,String newPwd);
 }
