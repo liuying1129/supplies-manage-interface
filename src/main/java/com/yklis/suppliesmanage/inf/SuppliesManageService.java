@@ -13,7 +13,7 @@ public interface SuppliesManageService {
     String loadSJ_Pack(String sjunid);
     String queryReceiptList(String rkrqRadioValue);
     String audit(String unid,String userName);
-    String queryInventoryList();
+    String queryInventoryList(String hcName,String vendor);
     String outputInventory(String unid,String rlr,int sl,String dw,String ckrq,String memo,String shr);
     String queryOutputList(String ckrqRadioValue);
     String querySqsydw();
