@@ -21,4 +21,5 @@ public interface SuppliesManageService {
     String queryUsernameFromUserid(String account);
     String inventorySplit(String unid);
     boolean modifyPwd(String account,String newPwd);
+    String queryWebSocketNewValueUrl();
 }
