@@ -11,13 +11,6 @@
     <version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<!-- 定义变量 -->
-	<properties>
-    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    	<spring.version>4.1.7.RELEASE</spring.version>
-    	<spring.groupId>org.springframework</spring.groupId>
-	</properties>
-
 	<dependencies>
 	    <!-- scoper取值范围：
 	    compile，缺省值，适用于所有阶段，会随着项目一起发布。 
